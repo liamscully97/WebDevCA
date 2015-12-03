@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Bootstrap Tutorial</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+	<div class="navbar-static-top navbar-inverse" id="home">
+		<div class="container">
+			<div class="navbar-brand">
+				Movies R Us
+			</div>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				Menu
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="jumbotron">
+		<div class="container1">
+			
+			<h1>Hello World!</h1>
+			<p>This is our demo site, I hope you like it!</p>
+			<p>All code can be found on my GitHub account, and is free to use, modify and sell!</p>
+			<p><a href="http://github.com/samcogan" target="_blank" class="btn btn-primary btn-lg">Show me the code!</a></p>
+		</div>
+	</div>
+	
+	
+	<div class="alt1 padding" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h2 class="text-center">Star Wars </h2>
+				<p class="text-justify"><iframe width="360" height="305" src="https://www.youtube.com/embed/sGbxmsDFVnE" frameborder="0" allowfullscreen></iframe></p>
+				<a href="#one" class="btn btn-default">Tell me more..</a>
+			</div>
+			<div class="col-md-4">
+				<h2 class="text-center">Creed</h2>
+				<p class="text-justify"><iframe width="360" height="305" src="https://www.youtube.com/embed/Uv554B7YHk4" frameborder="0" allowfullscreen></iframe></p>
+				<a href="#two" class="btn btn-default">Tell me more..</a>
+			</div>
+			<div class="col-md-4">
+				<h2 class="text-center">Spectre</h2>
+				<p class="text-justify"><iframe width="360" height="305" src="https://www.youtube.com/embed/7GqClqvlObY" frameborder="0" allowfullscreen></iframe></p>
+				<a href="#three" class="btn btn-default">Tell me more..</a>
+			</div>
+		
+		</div>
+	</div>	
+	</div>
+	
+	
+	<div class="container" id="portfolio">
+		<div class="row padding" id="one">
+			<div class="col-md-6">
+				<img src="star_wars.png" class="img-circle img-responsive" alt="Circular holding image"/>
+			</div>
+			<div class="col-md-6">
+				<h2 class="text-center">Star Wars The Force Awaken!</h2>
+				<p class="text-justify">The Star Wars saga continues with this seventh entry -- the first under the Walt Disney Co. umbrella. The film will act as the start of a new trilogy set after the events of Return of the Jedi. J.J. Abrams directs from a script by Michael Arndt.</p>
+				
+			</div>
+		</div>	
+		<hr />
+		
+		<div class="row padding" id="two">
+			<div class="col-md-6">
+				<h2 class="text-center">Creed!</h2>
+				<p class="text-justify">Adonis Johnson never knew his famous father,world heavy weight champion Apollo Creed, who died before he was born. Still, there's no denying that boxing is in his blood, so Adonis heads to Philadelphia, the site of Apollo Creed's legendary match with a tough upstart named Rocky Balboa. Rocky sees in Adonis the strength and determination he had known in Apollo - the fierce rival who became his closest friend.</p>
+				
+			</div>
+			<div class="col-md-6">
+				<img src="creed.jpg" class="img-circle img-responsive" alt="Circular holding image"/>
+			</div>
+		</div>
+		<hr />
+		<div class="row padding" id="three">
+			<div class="col-md-6">
+				<img src="spectre.jpg" class="img-circle img-responsive" alt="Circular holding image"/>
+			</div>
+			<div class="col-md-6">
+				<h2 class="text-center">Spectre!</h2>
+				<p class="text-justify">A cryptic message from Bond's past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive, Bond peels back the layers of deceit to reveal the terrible truth behind SPECTRE.</p>	
+			</div>
+		</div>
+		<hr />
+	</div>
+	
+	<div class="container padding" id="contact">
+		<form role="form">
+			<h1>Contact us!!!! Send us Suggestions Or Reviews!!!</h1>
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" class="form-control" id="name" name="name" placeholder="Your name here"/>
+			
+			</div>
+			<div class="form-group">
+				<label for="message">Message:</label>
+				<textarea class="form-control" name="message" id="message" placeholder="Your message here"></textarea>
+			</div>
+			<div class="form-group">
+				<input type="checkbox" /> Send me promotional content
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+
+	<div class="alt2">
+		<div class="container">
+			<footer>
+				&copy; Susan Regazzoli <br />
+				<a href="#home">Back to top</a>
+			</footer>
+		</div>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+	$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+	</script>
+	</body>
+</html>

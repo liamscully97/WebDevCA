@@ -1,0 +1,34 @@
+.jumbotron
+{
+
+background-attachment:fixed;
+min-height:500px;
+margin-bottom:0px;
+}
+.alt1
+{
+background:#eee;
+min-height:400px;
+}
+
+.alt2
+{
+background:#333;
+min-height:150px;
+color:#fff;
+text-align:center;
+}
+
+.padding
+{
+padding-top:20px;
+padding-bottom:20px;
+}
+
+.container1
+{
+    max-height: 700px;
+    max-width: 700px;
+    background-image:url('bvs.jpeg');
+}    
+    
