@@ -1,8 +1,7 @@
 .jumbotron
 {
-
-background-attachment:fixed;
-min-height:500px;
+background-image:url("bvs.jpeg");
+min-height:400px;
 margin-bottom:0px;
 }
 .alt1
@@ -24,11 +23,3 @@ text-align:center;
 padding-top:20px;
 padding-bottom:20px;
 }
-
-.container1
-{
-    max-height: 700px;
-    max-width: 700px;
-    background-image:url('bvs.jpeg');
-}    
-    
