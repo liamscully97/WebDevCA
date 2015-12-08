@@ -1,10 +1,13 @@
-<!DOCTYPE html> 
-<html>
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" >
+<xsl:template match="/">
+	<html>
 	<head>
 		<title>Hcc's Movies</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<script src="buttonScript.js"></script>
 	</head>
 	<body>
 	<div class="navbar-static-top navbar-inverse" id="home">
@@ -25,14 +28,14 @@
 			</div>
 		</div>
 	</div>
-	
+
+    
 	<div class="jumbotron">
 		<div class="container1">
 			
 			<h1><font color="white">Welcome to Hcc's Movies</font></h1>
 			<p><font color="white">This is our demo site, I hope you like it!</font></p>
 			<p><font color="white">All code can be found on my GitHub account, and is free to use, modify and sell!</font></p>
-			<p><a href="http://github.com/samcogan" target="_blank" class="btn btn-primary btn-lg">Show me the code!</a></p>
 		</div>
 	</div>
 	
@@ -42,17 +45,17 @@
 		<div class="row">
 			<div class="col-md-4">
 				<h2 class="text-center">Star Wars </h2>
-				<p class="text-justify"><iframe width="360" height="305" src="https://www.youtube.com/embed/sGbxmsDFVnE" frameborder="0" allowfullscreen></iframe></p>
+				<p class="text-justify"><iframe width="360" height="305" src="https://www.youtube.com/embed/sGbxmsDFVnE" frameborder="0"></iframe></p>
 				<a href="#one" class="btn btn-default">Tell me more..</a>
 			</div>
 			<div class="col-md-4">
 				<h2 class="text-center">Creed</h2>
-				<p class="text-justify"><iframe width="360" height="305" src="https://www.youtube.com/embed/Uv554B7YHk4" frameborder="0" allowfullscreen></iframe></p>
+				<p class="text-justify"><iframe width="360" height="305" src="https://www.youtube.com/embed/Uv554B7YHk4" frameborder="0"></iframe></p>
 				<a href="#two" class="btn btn-default">Tell me more..</a>
 			</div>
 			<div class="col-md-4">
 				<h2 class="text-center">Spectre</h2>
-				<p class="text-justify"><iframe width="360" height="305" src="https://www.youtube.com/embed/7GqClqvlObY" frameborder="0" allowfullscreen></iframe></p>
+				<p class="text-justify"><iframe width="360" height="305" src="https://www.youtube.com/embed/7GqClqvlObY" frameborder="0"></iframe></p>
 				<a href="#three" class="btn btn-default">Tell me more..</a>
 			</div>
 		
@@ -64,7 +67,7 @@
 	<div class="container" id="reviews">
 		<div class="row padding" id="one">
 			<div class="col-md-6">
-				<img src="star_wars.png" class="img-circle img-responsive" alt="Circular holding image"/>
+				<img src="Images/star_wars.png" class="img-circle img-responsive" alt="Circular holding image"/>
 			</div>
 			<div class="col-md-6">
 				<h2 class="text-center">Star Wars The Force Awakens!</h2>
@@ -83,13 +86,13 @@
 				Directed by Ryan Coogler—whose deft 2013 debut, Fruitvale Station, chronicled the last day of Oscar Grant III before he was fatally shot by a BART police officer in Oakland—Creed introduces us to the illegitimate son of heavyweight champ Apollo Creed, who first bounded into the ring in the 1976 underdog hit Rocky. In a movie landscape littered with resuscitated franchises, this runs the risk of being just more of the same. Like Rocky, a smash that spawned 1,000 sequels (or so it seems), Creed mingles go-for-broke romance with bloody pugilist thrills—but instead of feeling like a rehash, it works like gangbusters. Coogler honors and builds upon the Rocky formula so that it feels both comfortingly old-fashioned and bracingly new. Audiences instantly adored Rocky, for good reason—it’s a great date movie, and Creed is too. You won’t have to be a lover-not-a-fighter to love it.</p>
 				</div>
 			<div class="col-md-6">
-				<img src="creed.jpg" class="img-circle img-responsive" alt="Circular holding image"/>
+				<img src="Images/creed.jpg" class="img-circle img-responsive" alt="Circular holding image"/>
 			</div>
 		</div>
 		<hr />
 		<div class="row padding" id="three">
 			<div class="col-md-6">
-				<img src="spectre.jpg" class="img-circle img-responsive" alt="Circular holding image"/>
+				<img src="Images/spectre.jpg" class="img-circle img-responsive" alt="Circular holding image"/>
 			</div>
 			<div class="col-md-6">
 				<h2 class="text-center">Spectre!</h2>
@@ -99,6 +102,42 @@
 		</div>
 		<hr />
 	</div>
+		
+	<div class="container padding" id="suggestions">
+		<form role="form">
+			<h1>Add a Film to our Brilliant List!</h1>
+
+			
+						<div class="form-group">
+				<label for="name">Film title:</label>
+				<input type="text" class="form-control" id="name" name="name" placeholder="The film title here:"/>
+				
+			
+			</div>
+			<div class="form-group">
+				<label for="message">Directors Name:</label>
+				<textarea class="form-control" name="message" id="message" placeholder="The Director name"></textarea>
+			</div>
+
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+	
+	<div>
+	<center><h2>My CD Collection</h2></center>
+    <center><table border="1">
+      <tr bgcolor="#9acd32">
+        <th style="text-align:left">Title</th>
+        <th style="text-align:left">Director</th>
+      </tr>
+      <xsl:for-each select="catalog/cd">
+      <tr>
+        <td><xsl:value-of select="title"/></td>
+        <td><xsl:value-of select="director"/></td>
+      </tr>
+      </xsl:for-each>
+    </table></center>
+    </div>
 	
 	<div class="container padding" id="suggestions">
 		<form role="form">
@@ -108,7 +147,7 @@
 				<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"/>
 			</div>
 			<div class="form-group">
-				<label for="name">Name:</label>gyjj
+				<label for="name">Name:</label>
 				<input type="text" class="form-control" id="name" name="name" placeholder="Your name here"/>
 				
 			
@@ -130,38 +169,31 @@
 			<button type="submit" class="btn btn-default">Submit</button>
 		</form>
 	</div>
+<div>
+   <button type="button" onclick="loadDoc()">Our Movie Collection!</button>
+<table id="demo"></table>
+ </div>
 
+		
+		
 	<div class="alt2">
 		<div class="container">
 			<footer>
-				Follow us on:
-				<h2>Facebook
+	Follow us on:
+				<h1>Facebook</h1>
 				<a href="https://www.facebook.com/">
-				<img src="fb.png" alt="Facebook" style="width:50px;height:50px;"></h2>
+				<img src="Images/fb.png" alt="Facebook" style="width:50px;height:50px;"/>
 				</a>
-				&copy; Hcc's Movies <br />
+				
 				<a href="#home">Back to top</a>
+				
 			</footer>
 		</div>
 	</div>
 	
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/bootstrap.js"></script>
-	<script>
-	$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-	</script>
 	</body>
-</html>
+		</html>
+	</xsl:template>
+</xsl:stylesheet>
