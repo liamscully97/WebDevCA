@@ -3,42 +3,27 @@
 	<cd>
 		<title>Batman Vs Superman</title>
 		<director>Zack Snyder</director>
-		<country>USA</country>
-		<company>Columbia</company>
-		<price>$410 Million</price>
 		<year>2016</year>
 	</cd>
 	<cd>
 		<title>Creed</title>
 		<director>Ryan Coogler</director>
-		<country>USA</country>
-		<company>CBS Records</company>
-		<price>9.90</price>
-		<year>1988</year>
+		<year>2015</year>
 	</cd>
 	<cd>
 		<title>Spectre</title>
 		<director>Sam Mendes</director>
-		<country>USA</country>
-		<company>RCA</company>
-		<price>9.90</price>
-		<year>1982</year>
+		<year>2015</year>
 	</cd>
 	<cd>
 		<title>Star Wars VII: The Force Awakens</title>
 		<director>J.J Abrams</director>
-		<country>UK</country>
-		<company>Virgin records</company>
-		<price>10.20</price>
-		<year>1990</year>
+		<year>2015</year>
 	</cd>
 	<cd>
 		<title>Deadpool</title>
 		<director>Tim Miller</director>
-		<country>USA</country>
-		<company>BMG</company>
-		<price>9.90</price>
-		<year>1997</year>
+		<year>2016</year>
 	</cd>
 </catalog>
 

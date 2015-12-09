@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="buttonScript.js"></script>
+		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://webdevca-liamscully.c9users.io/bootstrap-3.3.6-dist/rss/rss2.xml" /> 
 	</head>
 	<body>
 	<div class="navbar-static-top navbar-inverse" id="home">
@@ -31,32 +32,32 @@
 
     
 	<div class="jumbotron">
-		<div class="container1">
+		<div class="container">
 			
 			<h1><font color="white">Welcome to Hcc's Movies</font></h1>
 			<p><font color="white">This is our demo site, I hope you like it!</font></p>
-			<p><font color="white">All code can be found on my GitHub account, and is free to use, modify and sell!</font></p>
+			<p><font color="white">Please feel free to navigate the application and leave any suggestions!</font></p>
 		</div>
 	</div>
 	
 	
 	<div class="alt1 padding" id="trailers">
-	<div class="container">
+	<div class="container1">
 		<div class="row">
 			<div class="col-md-4">
 				<h2 class="text-center">Star Wars </h2>
 				<p class="text-justify"><iframe width="360" height="305" src="https://www.youtube.com/embed/sGbxmsDFVnE" frameborder="0"></iframe></p>
-				<a href="#one" class="btn btn-default">Tell me more..</a>
+				<center><a href="#one" class="btn btn-default">Tell me more..</a></center>
 			</div>
 			<div class="col-md-4">
 				<h2 class="text-center">Creed</h2>
 				<p class="text-justify"><iframe width="360" height="305" src="https://www.youtube.com/embed/Uv554B7YHk4" frameborder="0"></iframe></p>
-				<a href="#two" class="btn btn-default">Tell me more..</a>
+				<center><a href="#two" class="btn btn-default">Tell me more..</a></center>
 			</div>
 			<div class="col-md-4">
 				<h2 class="text-center">Spectre</h2>
 				<p class="text-justify"><iframe width="360" height="305" src="https://www.youtube.com/embed/7GqClqvlObY" frameborder="0"></iframe></p>
-				<a href="#three" class="btn btn-default">Tell me more..</a>
+				<center><a href="#three" class="btn btn-default">Tell me more..</a></center>
 			</div>
 		
 		</div>
@@ -169,10 +170,10 @@
 			<button type="submit" class="btn btn-default">Submit</button>
 		</form>
 	</div>
-<div>
-   <button type="button" onclick="loadDoc()">Our Movie Collection!</button>
+<div class="abbutton">
+   <center><button type="button" onclick="loadDoc()">Our Movies!</button>
 <table id="demo"></table>
- </div>
+ </center></div>
 
 		
 		

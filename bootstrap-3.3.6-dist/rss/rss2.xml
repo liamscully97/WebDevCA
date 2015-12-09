@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+
+<channel>
+    <title>Hcc's Movies</title>
+    <link>https://webdevca-liamscully.c9users.io/bootstrap-3.3.6-dist/</link>
+    <atom:link href="https://webdevca-liamscully.c9users.io/bootstrap-3.3.6-dist/rss/rss2.xml" rel="self" type="application/rss+xml" />
+    <description>My RSS Feed</description>
+    <language>en</language>
+	
+        <item>
+	    <title>My RSS Feed</title>
+	    <guid isPermaLink="true">https://webdevca-liamscully.c9users.io/bootstrap-3.3.6-dist/rss/rss2.xml</guid>
+	    <link>https://webdevca-liamscully.c9users.io/bootstrap-3.3.6-dist/</link>
+	    <pubDate>Wed, 09 Dec 2015 01:24:00 +1100</pubDate>
+	    <description><![CDATA[ <p>This is a brief summary of the post, so tempting that no one will be able to resist clicking through.</p> ]]></description> 
+        </item>
+	
+</channel>
+</rss>

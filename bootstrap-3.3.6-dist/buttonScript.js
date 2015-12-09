@@ -11,17 +11,16 @@ function loadDoc() {
 function myFunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;
-  var table="<tr><th>Director</th><th>Title</th></tr>";
-  var x = xmlDoc.getElementsByTagName("catalog");
-  for (i = 0; i <x.length; i++) { 
-  var x = xmlDoc.getElementsByTagName("movie");
+  var table="<tr><th>Director</th><th>Title</th><th>Year</th></tr>";
+  var x = xmlDoc.getElementsByTagName("cd");
   for (i = 0; i <x.length; i++) { 
     table += "<tr><td>" +
-    x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue +
+    x[i].getElementsByTagName("director")[0].childNodes[0].nodeValue +
     "</td><td>" +
-    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+       x[i].getElementsByTagName("year")[0].childNodes[0].nodeValue +
     "</td></tr>";
   }
   document.getElementById("demo").innerHTML = table;
-}
 }
