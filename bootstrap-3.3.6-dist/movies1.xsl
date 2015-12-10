@@ -182,6 +182,12 @@
 <table id="demo"></table>
  </center></div>
  
+ <div class="acbutton"><center>
+ <h1>Directors List</h1>
+	<p>This is a list of all the Directors in our System</p>
+	<p id="directorList"></p>
+</center></div>	
+<script src ="list.js"></script>
 
 	<div class="alt2">
 		<div class="container">
