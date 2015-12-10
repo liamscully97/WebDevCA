@@ -9,7 +9,6 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="buttonScript.js"></script>
 		<script src="ajax.js"></script>
-		<iframe src="rss.php" height="70px" width="70px" allowfullscreen="" frameborder="2"></iframe>
 		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://webdevca-liamscully.c9users.io/bootstrap-3.3.6-dist/rss.xml" /> 
 	</head>
 	<body>
@@ -31,8 +30,9 @@
 			</div>
 		</div>
 	</div>
-
-    
+	<div class="rss">
+<iframe src="rss.php" height="50px" width="50px" allowfullscreen="" frameborder="2"></iframe>
+    </div>
 	<div class="jumbotron">
 		<div class="container">
 			
