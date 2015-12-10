@@ -7,6 +7,8 @@ $xsl = new DOMDocument;
 $xsl->substituteEntities = true; 
 $xsl->load('movies1.xsl');
 
+
+
 // Configure the transformer
 $proc = new XSLTProcessor;
 $proc->importStyleSheet($xsl); // attach the xsl rules

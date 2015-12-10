@@ -1,29 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog>
-	<cd>
+	<movie>
 		<title>Batman Vs Superman</title>
 		<director>Zack Snyder</director>
 		<year>2016</year>
-	</cd>
-	<cd>
+	</movie>
+	<movie>
 		<title>Creed</title>
 		<director>Ryan Coogler</director>
 		<year>2015</year>
-	</cd>
-	<cd>
+	</movie>
+	<movie>
 		<title>Spectre</title>
 		<director>Sam Mendes</director>
 		<year>2015</year>
-	</cd>
-	<cd>
+	</movie>
+	<movie>
 		<title>Star Wars VII: The Force Awakens</title>
 		<director>J.J Abrams</director>
 		<year>2015</year>
-	</cd>
-	<cd>
-		<title>Deadpool</title>
-		<director>Tim Miller</director>
+	</movie>
+	<movie>
+		<title>Captain America: Civil War</title>
+		<director>Joe Russo, Anthony Russo</director>
 		<year>2016</year>
-	</cd>
+	</movie>
+		<movie>
+		<title>Spider-Man</title>
+		<director>TBC</director>
+		<year>2017</year>
+	</movie>
+		<movie>
+		<title>Suicide Squad</title>
+		<director>David Ayer</director>
+		<year>2016</year>
+	</movie>
+		<movie>
+		<title>Assassins Creed</title>
+		<director>Justin Kurzel</director>
+		<year>2016</year>
+	</movie>
+		<movie>
+		<title>Rogue One: A Star Wars Story</title>
+		<director>Gareth Edwards</director>
+		<year>2016</year>
+	</movie>
+		<movie>
+		<title>The Flash</title>
+		<director>Seth Grahame-Smith</director>
+		<year>2018</year>
+	</movie>
 </catalog>
 

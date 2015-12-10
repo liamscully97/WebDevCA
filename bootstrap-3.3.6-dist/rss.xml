@@ -9,7 +9,7 @@
 <channel>
     <title>Hcc's Movies</title>
     <link>https://webdevca-liamscully.c9users.io/bootstrap-3.3.6-dist/</link>
-    <atom:link href="https://webdevca-liamscully.c9users.io/bootstrap-3.3.6-dist/rss/rss2.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://webdevca-liamscully.c9users.io/bootstrap-3.3.6-dist/rss/php" rel="self" type="application/rss+xml" />
     <description>My RSS Feed</description>
     <language>en</language>
 	

@@ -46,3 +46,20 @@ padding-bottom:20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
+
+.acbutton {
+  background: #d93434;
+  background-image: -webkit-linear-gradient(top, #d93434, #ffffff);
+  background-image: -moz-linear-gradient(top, #d93434, #ffffff);
+  background-image: -ms-linear-gradient(top, #d93434, #ffffff);
+  background-image: -o-linear-gradient(top, #d93434, #ffffff);
+  background-image: linear-gradient(to bottom, #d93434, #ffffff);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #0a040a;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}

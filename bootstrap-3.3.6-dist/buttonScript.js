@@ -1,4 +1,4 @@
-function loadDoc() {
+function loadDoc1() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -12,7 +12,7 @@ function myFunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;
   var table="<tr><th>Director</th><th>Title</th><th>Year</th></tr>";
-  var x = xmlDoc.getElementsByTagName("cd");
+  var x = xmlDoc.getElementsByTagName("movie");
   for (i = 0; i <x.length; i++) { 
     table += "<tr><td>" +
     x[i].getElementsByTagName("director")[0].childNodes[0].nodeValue +
